@@ -1,90 +1,199 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" data-dark>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/landing-page.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="icon" href="/assets/favicon_io/favicon.ico" type="image/x-icon">
     <title>Flamingo Guatemala</title>
-
 </head>
-<body>
+<body data-dark>
 
-    <header class="titulares header">
-        <div class="logo" id="logo">
-            <a href="#index.html"><img src="/assets/favicon_io/android-chrome-192x192.png" alt="logo"></a>
-            
-        </div>
-        <nav class="menu">
+    <header class="header">
+         <nav class="nav-header">
             <ul>
-                <li><a href="#index.html">Inicio</a></li>
-                <li><a href="/navbar/nosotros.html">Nosotros</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li>
+                     <div class="logo" id="logo">
+                        <a href="#seccion1"><img src="/assets/favicon_io/android-chrome-192x192.png" alt="logo"></a>
+                    </div>
+                </li>
+                <li><a href="#seccion1">Inicio</a></li>
+                <li><a href="#seccion2">Nosotros</a></li>
+                <li><a href="#seccion3">Contacto</a></li>
+                <li><a href="/navbar/productos.html">Productos</a></li>
+                <li></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        
-        <article class="hero-image">
+    <button class="panel-btn hamburger hamburger--arrow-r" type="button" title="none">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button> 
+
+      <aside class="panel">
+        <nav class="menu">
+            <a href="#seccion1">Inicio</a>
+            <a href="#seccion2">Nosotros</a>
+            <a href="#seccion3">Contacto</a>
+            <a href="/navbar/productos.html">Productos</a>
+            <!-- <a href="#seccion5">Responsive Tester</a>
+            <a href="#seccion6">Deteccion de Dispositivos (User Agent)</a>
+            <a href="#seccion7">Deteccion de la conexion</a>
+            <a href="#seccion8">Deteccion de la cámara web</a>
+            <a href="#seccion9">Geolocalización</a>
+            <a href="#seccion10">Filtros de Búsquedas</a> -->
+        </nav>
+      </aside>
+      <main>
+        <section id="seccion1" class="section">
+           <article class="hero-image">
             <div>
-                <h1>Cuidado Profesional</h1>
+                <h1>Cuidado Profesional con Productos <span class="text-section1">Flamingo</span> en Guatemala</h1>
             </div>
         </article>
+            
+        </section>
         
-        <section class="flex-container">
-            <article class="flex-item ">
-                <h2>Titulo</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo nostrum perspiciatis voluptate enim modi consequuntur cum beatae cumque minus architecto nisi, rem laborum dolor, ipsa ullam vitae repellendus quia.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo nostrum perspiciatis voluptate enim modi consequuntur cum beatae cumque minus architecto nisi, rem laborum dolor, ipsa ullam vitae repellendus quia.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo nostrum perspiciatis voluptate enim modi consequuntur cum beatae cumque minus architecto nisi, rem laborum dolor, ipsa ullam vitae repellendus quia.</p>
-            </article>
-            <article class="flex-item">
-                <img src="/assets/mustang.jpg" alt="background">
-            </article>
-        </section>
-        <section class="flex-container flex-row-reverse">
-            <article class="flex-item">
-                <h2>Titulo</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo nostrum perspiciatis voluptate enim modi consequuntur cum beatae cumque minus architecto nisi, rem laborum dolor, ipsa ullam vitae repellendus quia.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo nostrum perspiciatis voluptate enim modi consequuntur cum beatae cumque minus architecto nisi, rem laborum dolor, ipsa ullam vitae repellendus quia.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo nostrum perspiciatis voluptate enim modi consequuntur cum beatae cumque minus architecto nisi, rem laborum dolor, ipsa ullam vitae repellendus quia.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo nostrum perspiciatis voluptate enim modi consequuntur cum beatae cumque minus architecto nisi, rem laborum dolor, ipsa ullam vitae repellendus quia.</p>
-            </article>
-            <article class="flex-item">
-                <img src="/assets/wash-wax-3.jpg" alt="Laptop Lenovo">
+        <section id="seccion2" class="section">
+            <h2>Flamingo Guatemala</h2>
+            <article class="stage">
+               <p>Establecida en 2006, Flamingo Car Care Tech Co., Ltd es una empresa fabricante y exportadora profesional, cofundada por Guangdong Hosen New Material Industrial Co., Ltd. y Flamingo Car Care Tech Inc., dedicada a la investigación, producción y venta de productos para el cuidado del automóvil, pintura en aerosol, recubrimientos especiales, limpieza industrial y agentes para el tratamiento de superficies.</p>
+
+               <img src="/assets/windshield-washer.jpg" alt="">
+
+               <img src="/assets/tire-foam.jpg" alt="">
+               
+               <p>Tras 10 años de experiencia y acumulación, Flamingo posee un profundo conocimiento en productos para el cuidado del automóvil, una capacidad de investigación y desarrollo líder a nivel mundial, un excelente equipo de planificación y casi un siglo de experiencia en manufactura, lo cual ha impulsado la venta de los productos Flamingo en América del Norte. Para que más amantes de los automóviles en el mundo conozcan y utilicen los productos Flamingo, Flamingo Car Care Tech Inc. colabora con Guangdong Hosen New Material Industrial Co., Ltd. en el establecimiento de una base de investigación y producción, promoviendo los productos Flamingo a nivel mundial.</p>               
+
+               <p>La nueva base de producción está ubicada en Wengyuan, Guangdong. Con un entorno hermoso y transporte conveniente, cubre un área de casi 30,000 metros cuadrados, y está equipada con equipos avanzados de laboratorio y producción importados especialmente desde Estados Unidos, Alemania y Suiza. Actualmente cuenta con 6 líneas de producción totalmente automáticas para aerosoles, 1 para llenado de pastas, 1 para llenado de líquidos y 1 para cera emulsionada, con una capacidad de producción diaria de 150,000 latas. La planta ha obtenido la certificación para la producción de aerosoles en China, además de haber aprobado las certificaciones de sistemas de calidad ISO9001 y de gestión ambiental ISO14001. Con estándares técnicos líderes de EE. UU. y gran capacidad de producción, la base no solo fabrica productos Flamingo, sino que también mantiene relaciones de cooperación a largo plazo con muchas empresas internacionales de renombre, brindándoles servicios OEM y ODM profesionales y completos.</p>
+
+               <img src="/assets/radiator-rust-preventive.jpg" alt="">
+
             </article>
         </section>
-        <h2>Responsive sin Media Queries con Flexbox</h2>
-        <section class="flex-responsive">
-            <article class="flex-responsive-item">Item Responsivo 1</article>
-            <article class="flex-responsive-item">Item Responsivo 2</article>
-            <article class="flex-responsive-item">Item Responsivo 3</article>
-            <article class="flex-responsive-item">Item Responsivo 4</article>
-            <article class="flex-responsive-item">Item Responsivo 5</article>
-            <article class="flex-responsive-item">Item Responsivo 6</article>
-            <article class="flex-responsive-item">Item Responsivo 7</article>
-            <article class="flex-responsive-item">Item Responsivo 8</article>
-            <article class="flex-responsive-item">Item Responsivo 9</article>
-            <article class="flex-responsive-item">Item Responsivo 10</article>
-            <article class="flex-responsive-item">Item Responsivo 11</article>
-            <article class="flex-responsive-item">Item Responsivo 12</article>
-            <article class="flex-responsive-item">Item Responsivo 13</article>
-            <article class="flex-responsive-item">Item Responsivo 14</article>
-            <article class="flex-responsive-item">Item Responsivo 15</article>
-            <article class="flex-responsive-item">Item Responsivo 16</article>
-            <article class="flex-responsive-item">Item Responsivo 17</article>
-            <article class="flex-responsive-item">Item Responsivo 18</article>
-            <article class="flex-responsive-item">Item Responsivo 19</article>
+
+        <section id="seccion3" class="section">
+            <h2>Contacto</h2>
+            <div class="contacto">
+                <div class="contacto1">
+                    <p>Para más información sobre nuestros productos, puedes contactarnos a través de:</p>    
+                    <form action="#" method="post">               
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre...">                
+                    <input type="email" id="email" name="email" required placeholder="Ingresa tu e-mail..."><br><br>               
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="30" required placeholder="Ingresa tu mensaje..."></textarea><br><br>
+                    <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="contacto2">
+                    <h2></h2>
+                    <p></p>
+                </div>
+
+                           
+            
+                    
+            </div>
         </section>
-    </main>
-    
-    <footer class="titulares">
-        <h2>Sticky Footer</h2>
+
+        <section id="seccion4" class="section">
+            <h2>Responsible Responsive</h2>
+            <div id="youtube"></div>
+            <div id="gmaps"></div>
+        </section>
+
+        <section id="seccion5" class="section">
+            <h2>Responsive Tester</h2>
+            <form id="responsive-tester">
+                <input type="url" placeholder="URL" name="direccion" required><br>
+                <input type="text" placeholder="Ancho" name="ancho" required><br>
+                <input type="text" placeholder="Alto" name="alto" required><br>
+
+                <input type="submit" value="Probar" name="probar">
+                <input type="button" value="Cerrar" name="cerrar">
+            </form>
+        </section>
+
+        <section id="seccion6" class="section">
+            <h2>Deteccion de Dispositivos<br>(User Agent)</h2>
+            <div id="user-device"></div>
+        </section>
+
+        <section id="seccion7" class="section">
+            <h2>Deteccion de la conexion</h2>
+        </section>
+        
+        <section id="seccion8" class="section">
+            <h2>Deteccion de la cámara web</h2>
+            <video src="" id="webcam"></video>
+        </section>
+
+        <section id="seccion9" class="section">
+            <h2>Geolocalización</h2>
+            <div id="geolocation"></div>
+        </section>
+
+        <section id="seccion10" class="section">
+            <h2>Filtros de Búsquedas</h2>
+            <input type="search" placeholder="Buscar..." class="card-filter">
+            <article class="cards">
+                <figure class="card">
+                    <img src="https://placehold.co/200x200/png" alt="">
+                    <figcaption>Any</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placehold.co/200x200/png" alt="">
+                    <figcaption>Tech</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placehold.co/200x200/png" alt="">
+                    <figcaption>Sports</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placehold.co/200x200/png" alt="">
+                    <figcaption>People</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placehold.co/200x200/png" alt="">
+                    <figcaption>Art</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placehold.co/200x200/png" alt="">
+                    <figcaption>Music</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="seccion11" class="section">
+            <h2>Filtros de Búsquedas</h2>
+        </section>
+
+        <section id="seccion12" class="section">
+            <h2>Filtros de Búsquedas</h2>
+        </section>
+
+        <section id="seccion13" class="section">
+            <h2>Filtros de Búsquedas</h2>
+        </section>
+
+      </main>
+
+      <button class="scroll-top-btn hidden">&#11014;</button>
+
+      <button class="dark-theme-btn">🌙</button>
+
+    <footer class="footer">
+        <p>Flamingo Guatemala &copy; 2025</p>
+        
     </footer>
 
-    <script src="/js/landing-page.js"></script>
+
+      <script src="/js/index-dom.js" type="module"></script>
 </body>
 </html>
+
+
+
+              

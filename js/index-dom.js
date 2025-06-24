@@ -3,15 +3,15 @@
 import hamburgerMenu from "./dom/menu-hamburguesa.js";
 import { digitalClock, sonido } from "./dom/reloj.js";
 import { moveBall, shortcuts } from "./dom/teclado.js";
-import  countdown from "./dom/cuenta_regresiva.js";
+//import  countdown from "./dom/cuenta_regresiva.js";
 import scrollTopButton from "./dom/boton_scroll.js";
 import darkTheme from "./dom/tema_oscuro.js";
-import responsiveMedia from "./dom/objeto_responsive.js";
+//import responsiveMedia from "./dom/objeto_responsive.js";
 import responsiveTester from "./dom/prueba_responsive.js";
 import userDeviceInfo from "./dom/deteccion_dispositivos.js";
-import networkStatus from "./dom/deteccion_red.js";
-import webCam from "./dom/deteccion_webcam.js";
-import getGeolocation from "./dom/geolocalizacion.js";
+//import networkStatus from "./dom/deteccion_red.js";
+//import webCam from "./dom/deteccion_webcam.js";
+//import getGeolocation from "./dom/geolocalizacion.js";
 import searchFilters from "./dom/filtro_busquedas.js";
 
 const d = document;

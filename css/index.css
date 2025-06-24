@@ -8,7 +8,7 @@
     --flamingo-color: #ca1683;
     --main-color: #8b8b8b;
     --second-color: #000000;
-    --main-modal-color: #3f3f3f;
+    --main-modal-color: #222222;
     --second-modal-color: rgba(34, 34, 34, 0.85);
     --container-width: 1200px;
 }
@@ -122,6 +122,7 @@ img {
     margin: 0 !important;
 }
 
+
 .text-section1 {
     color: var(--flamingo-color);
     -webkit-text-stroke: 2px #fff;
@@ -131,8 +132,8 @@ img {
 .panel {
     position: fixed;
     z-index: 998;
-    top: 0;
-    bottom: 0;
+    top: 25;
+    bottom: 75;
     right: 0;
     left: 0;
     background-color: var(--second-modal-color);
@@ -161,7 +162,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-color); ;
+    background-color: var(--main-color);
 }
 
 .menu {
@@ -179,14 +180,14 @@ img {
     display: block;
     font-size: 1.5rem;
     text-decoration: none;
-    color: var(--main-color);
+    color: #fff;
     transition: all 0.3s ease;
 }
 
 .menu a:hover {
     font-weight: bold;
     color: var(--second-color);
-    background-color: var(--main-modal-color);
+    background-color: var(--flamingo-color);
 }
 
 /**** Eventos del Teclado ****/
@@ -197,14 +198,21 @@ img {
     grid-template-rows: repeat(3, auto);
     align-items: center;
     gap: 3vh;
+    margin: 2rem;
 }
 
 .stage img {
-    width: 100%;
-    height: 33vh;
+    width: 70%;
     object-fit: cover; 
     border: 2px solid var(--flamingo-color);
-    transform: skew(3deg);
+    margin: 0 auto;
+}
+
+.stage p {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 
@@ -214,7 +222,7 @@ img {
     position: fixed;
     z-index: 999;
     bottom: 1vh;
-    right: calc(4.25rem + 1vw);
+    right: 1vw;
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
@@ -319,6 +327,60 @@ img {
     order: 1;
 }
 
+/* Contacto */
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.contacto div {
+    width : 50%;
+    padding: 2rem;
+}
+
+.contacto1 {
+   border: solid 1px var(--main-color);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.contacto1 input {
+    width: 45%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--main-modal-color);
+    color: #fff;
+}
+
+.contacto1 textarea {
+    width: 90%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--main-modal-color);
+    color: #fff;
+}
+
+.contacto button {
+    width: 40%;
+    padding: 1rem;
+    background-color: var(--flamingo-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.contacto button:hover {
+    background-color: #ea61b3;
+    transition: all 0.5s ease-out;
+}
 
 /* Footer */
 

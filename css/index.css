@@ -131,7 +131,7 @@ img {
 
 .panel {
     position: fixed;
-    z-index: 998;
+    z-index: 995;
     top: 25;
     bottom: 75;
     right: 0;
@@ -220,7 +220,7 @@ img {
 
 .scroll-top-btn {
     position: fixed;
-    z-index: 999;
+    z-index: 998;
     bottom: 1vh;
     right: 1vw;
     width: 4rem;
@@ -228,7 +228,7 @@ img {
     border-radius: 50%;
     font-size: 2rem;
     font-weight: bold;
-    background-color: var(--main-color);
+    background-color: var(--flamingo-color);
     color: var(--second-color);
     cursor: pointer;
     outline: 0;
@@ -238,8 +238,7 @@ img {
 
 .scroll-top-btn:hover {
     background-color: var(--second-color);
-    color: var(--main-color);
-    
+    color: var(--main-color);    
 }    
 
 .hidden {
@@ -270,7 +269,6 @@ img {
 .dark-theme-btn:hover {
     background-color: var(--second-color);
     border: solid 1px var(--main-color);
-    
 }   
 
 .dark-mode {
@@ -299,7 +297,7 @@ img {
 
 /* Search Filters */
 
-.cards {
+/*.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -321,11 +319,12 @@ img {
 
 
 .filter {
-    /* display: none; */
+    //display: none; 
     visibility: hidden;
     opacity: 0;
     order: 1;
 }
+
 
 /* Contacto */
 
@@ -391,7 +390,6 @@ footer {
     text-align: center;
     font-size: 1.25rem
 }
-
 
 
 /*  Responsive Design */

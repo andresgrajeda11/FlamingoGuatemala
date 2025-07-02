@@ -2,12 +2,11 @@ const d = document;
 const w = window;
 
 export default function scrollTopButton(btn) {
-    const $scrollBtn = d.querySelector(btn);
-
-    
+    const $scrollBtn = d.querySelector(btn);    
     
 
     w.addEventListener("scroll", (e) => {
+        console.log("scrolling", w.pageYOffset);
         let scrollTop = w.pageYOffset || d.documentElement.scrollTop;
 
         if(scrollTop > 1200) {

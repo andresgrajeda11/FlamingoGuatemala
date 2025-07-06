@@ -38,6 +38,7 @@ img {
 
 .header {
     position: sticky;
+     width: 100%;
     top: 0;
     padding: 1rem;
     background-color: var(--main-color);
@@ -188,9 +189,9 @@ img {
     background-color: var(--flamingo-color);
 }
 
-/**** Eventos del Teclado ****/
+/**** Productos ****/
 
-.stage {
+.products {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
     grid-template-rows: repeat(3, auto);
@@ -199,19 +200,42 @@ img {
     margin: 2rem;
 }
 
-.stage img {
+.products img {
     width: 70%;
     object-fit: cover; 
     border: 2px solid var(--flamingo-color);
     margin: 0 auto;
 }
 
-.stage p {
+.products p {
     text-align: center;
     width: 90%;
     margin: 0 auto;
     padding: 1rem;
     line-height: 1.5;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.categorias a {
+    width: 22%;
+    border: solid 1px var(--flamingo-color);
+    margin: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--flamingo-color);
+}
+
+.categorias img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 /**** Scroll Top Button ****/

@@ -197,7 +197,8 @@ img {
     grid-template-rows: repeat(3, auto);
     align-items: center;
     gap: 3vh;
-    margin: 2rem;
+    margin: 3rem;
+    border-bottom: #ca1683 solid 2px;
 }
 
 .products img {
@@ -213,6 +214,10 @@ img {
     margin: 0 auto;
     padding: 1rem;
     line-height: 1.5;
+}
+
+#seccion3 h2 {    
+    scroll-margin-top: 8.5rem;
 }
 
 .categorias {

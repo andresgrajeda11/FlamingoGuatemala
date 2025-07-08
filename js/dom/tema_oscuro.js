@@ -7,26 +7,27 @@ export default function darkTheme(btn, classDark) {
 
     //console.log($selectors);
 
-    let moon = "🌙",
-    sun = "☀️";
+    let moon = `<i class="fa-solid fa-moon"></i>`;
+    let sun = `<i class="fa-solid fa-sun"></i>`;
+
 
     const LightMode = () => {
         $selectors.forEach(el => el.classList.remove(classDark));
-        $themeBtn.textContent = moon;
+        $themeBtn.innerHTML = moon;
         ls.setItem("theme", "light");
     }
     const DarkMode = () => {
         $selectors.forEach(el => el.classList.add(classDark));
-        $themeBtn.textContent = sun;
+        $themeBtn.innerHTML = sun;
         ls.setItem("theme", "dark");
     }
 
     d.addEventListener("click", (e) => {
 
-        if (e.target.matches(btn)) {
+        if (e.target.matches(btn) || e.target.matches(`${btn} *`)) {
             //console.log($themeBtn.textContent);
 
-            if ($themeBtn.textContent === moon) {
+            if ($themeBtn.innerHTML === moon) {
                 DarkMode();
             } else {
                 LightMode();

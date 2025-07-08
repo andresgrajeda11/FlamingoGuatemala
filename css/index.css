@@ -1,9 +1,16 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /**** CSS Reset ****/
 
+.inter-uniquifier {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
-    --main-font: sans-serif;
+    --main-font: "Inter", sans-serif;
     --font-size: 16px;
     --flamingo-color: #ca1683;
     --main-color: #8b8b8b;
@@ -259,7 +266,7 @@ img {
     font-size: 2rem;
     font-weight: bold;
     background-color: var(--second-color);
-    color: var(--second-color);
+    color: #fff;
     cursor: pointer;
     outline: 0;
     border: 0;
@@ -268,7 +275,8 @@ img {
 
 .dark-theme-btn:hover {
     background-color: var(--second-color);
-    border: solid 1px var(--main-color);
+    color: rgb(250, 200, 62);
+    border: solid 1px rgb(250, 200, 62);
 }   
 
 .dark-mode {
@@ -371,13 +379,36 @@ img {
     color: #fff;
     border: none;
     border-radius: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
     transition: all 0.5s ease-out;
 }
 
 .contacto button:hover {
-    background-color: #ea61b3;
+    color: var(--second-color);
+    background-color: #f16b2d;
+    transition: all 0.5s ease-out;
+}
+
+.contacto2 ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+
+.contacto2 ul a {    
+    color: var(--flamingo-color);
+    padding: 1.3rem;
+    border-radius: 50%;
+    transition: all 0.5s ease-out;
+}
+
+.contacto2 ul a:hover {    
+    color: #f16b2d;
     transition: all 0.5s ease-out;
 }
 
